@@ -6,6 +6,24 @@
 /// a. Which one would you prefer to use and why?
 library;
 
-class SequenceGeneration {
+abstract class Singleton {
+  Singleton._privateConstructor();
+}
 
+class SequenceGeneration extends Singleton {
+  SequenceGeneration._privateConstructor() : super._privateConstructor();
+
+  static final SequenceGeneration _instance =
+      SequenceGeneration._privateConstructor();
+
+  factory SequenceGeneration() {
+    return _instance;
+  }
+
+  int _counter = 0;
+
+  int getNextNumber() {
+    _counter++;
+    return _counter;
+  }
 }
