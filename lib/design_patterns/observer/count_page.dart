@@ -46,12 +46,12 @@ class _CountPageState extends State<CountPage> {
                       '_MyHomePageState - <receive> <event notification> data: ${snapshot.data}');
                   return Text(
                     '${snapshot.data}',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 } else {
                   return Text(
                     'Empty data',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   );
                 }
               },

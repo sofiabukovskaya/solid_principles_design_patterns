@@ -58,7 +58,7 @@ class TrafficLightApp extends StatefulWidget {
   const TrafficLightApp({super.key});
 
   @override
-  _TrafficLightAppState createState() => _TrafficLightAppState();
+  State<TrafficLightApp> createState() => _TrafficLightAppState();
 }
 
 class _TrafficLightAppState extends State<TrafficLightApp> {

@@ -15,10 +15,11 @@ class XMLLongListWithSeparator extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
             onTap: () {
-              print('Clicked on item #$index');
+              debugPrint('Clicked on item #$index');
             },
             title: Text(listOfItems[index].fullName),
-            subtitle: Text('${listOfItems[index].email} ${listOfItems[index].phoneNumber}'),
+            subtitle: Text(
+                '${listOfItems[index].email} ${listOfItems[index].phoneNumber}'),
             leading: Container(
               height: 50,
               width: 50,

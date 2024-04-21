@@ -1,13 +1,14 @@
+import 'package:flutter/foundation.dart';
 import 'package:solid_principles_design_patterns/solid/liskov_substitution_principle/electric_vehicle.dart';
 
-class ElectricCar extends ElectricVehicle{
+class ElectricCar extends ElectricVehicle {
   @override
   void charge() {
-      print('Charging battery');
+    debugPrint('Charging battery');
   }
 
   @override
   void move() {
-    print('Moving');
+    debugPrint('Moving');
   }
 }

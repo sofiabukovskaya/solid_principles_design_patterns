@@ -26,5 +26,5 @@ class DebugLogger extends BaseLogger {
   factory DebugLogger() => _instance ?? DebugLogger._internal();
 
   void _recordHandler(LogEvent event) =>
-      print('${_dateFormatter.format(event.time)}: ${event.message}');
+      debugPrint('${_dateFormatter.format(event.time)}: ${event.message}');
 }
